@@ -4,13 +4,14 @@ const Char = require('../models/Character.js')
 const gameController = {
     index: (req, res) => {
         Game.find().then(games => {
+            console.log(games)
             res.render('gameView/index', {games})
         })
     },
     show: (req, res) => {
         Game.findById(req.params.gameId).then(game =>{
-            let characters = game.characters
-            res.render('gameView/show', {characters})
+            console.log(game)
+            res.render('gameView/show', {game})
         })
     }
 }
