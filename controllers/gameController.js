@@ -2,7 +2,9 @@ const Game = require('../models/Game.js')
 
 const gameController = {
     index: (req, res) => {
-        res.send('Hello Neku!')
+        Game.find().then(games => {
+            res.render('index', {games})
+        })
     }
 }
 
