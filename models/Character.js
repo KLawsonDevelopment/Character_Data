@@ -7,7 +7,7 @@ const CharSchema = new Schema({
     game: String,
     gender: String,
     history: String,
-    imgLink: String
+    charLink: String
 })
 
 module.exports = mongoose.model('Char', CharSchema)

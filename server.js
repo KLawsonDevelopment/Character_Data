@@ -6,7 +6,7 @@ const routes = require('./routes/index.js')
 
 app.use (express.json())
 app.use(express.urlencoded({extended: true}))
-app.use (methodOverride('_method'))
+app.use(methodOverride('_method'))
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/public'))
 app.set('view engine', 'hbs')
