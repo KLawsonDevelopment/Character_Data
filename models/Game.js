@@ -6,6 +6,7 @@ const GameSchema = new Schema({
     year:Number,
     company: String,
     imgLink: String,
+    characters: []
 })
 
 module.exports = mongoose.model('Game', GameSchema)
