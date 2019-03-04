@@ -39,7 +39,7 @@ const fighterz = new Game ({
 
 Game.deleteMany({})
     .then(() => Char.deleteMany({}))
-    .then(() => Game.create(smash))
+    .then(() => Game.create(smash, fighterz))
     .then(() => Char.create(roy, fox))
     .then(() => console.log(smash.title + " was added to datatbase"))
     .then(() => console.log(fighterz.title + " was added to the database"))
