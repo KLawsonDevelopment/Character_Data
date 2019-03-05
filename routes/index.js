@@ -5,5 +5,9 @@ const charController = require('../controllers/charController')
 
 router.get('/', gameController.index)
 router.get('/:gameId', gameController.show)
+router.get('/new', gameController.new)
+router.post('/', gameController.create)
+
 router.get('/:gameId/:charId', charController.show)
+
 module.exports = router

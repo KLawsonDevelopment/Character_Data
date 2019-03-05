@@ -11,6 +11,14 @@ const gameController = {
         Game.findById(req.params.gameId).then(game =>{
             res.render('gameView/show', {game})
         })
+    },
+    new: (req, res) => {
+        res.render('gameView/new')
+    },
+    create: (req, res) => {
+        Game.create(req.body).then(game => {
+            res.redirect('/')
+        })
     }
 }
 
