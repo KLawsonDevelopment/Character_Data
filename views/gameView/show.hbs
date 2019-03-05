@@ -1,4 +1,8 @@
+<h1>{{game.title}}</h1>
+
 {{#each game.characters}}
 <a href="/{{../game._id}}/{{_id}}"><img class="charImg" src="{{charLink}}" alt="character image"></a>
 <p>{{name}}</p>
 {{/each}}
+
+<a href="/{{game._id}}/edit">Edit this game</a>
