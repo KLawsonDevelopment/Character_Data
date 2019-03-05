@@ -1,6 +1,14 @@
 const mongoose = require('./connection.js')
+const moment = require('moment')
 const Game = require('../models/Game')
 const Char = require('../models/Character')
+const Comment = require('../models/Comment')
+
+const NekuComment = new Comment({
+    user: 'Neku',
+    date: moment().format('h:mm:ss a, MMMM Do YYYY'),
+    comment: 'One of my favorite characters of all time.'
+})
 
 const roy = new Char({
     name: "Roy",
@@ -8,7 +16,8 @@ const roy = new Char({
     game: "Fire Emblem Series",
     gender: "Male",
     history: "Roy (pronounced /ɹɔɪ/[key][3]; Japanese: ロイ Roy) is the son of Marquess Eliwood of Lycia's House Pherae. In the Disturbance of Bern, he was entrusted with the leadership of Pherae's army in opposing the invading Kingdom of Bern in lieu of Eliwood's illness, later becoming the leader of the Lycian army as a whole following the death of Hector of Ostia, and ultimately assuming command of the Etrurian army. He sought to assist Bern's Princess Guinivere in finding a peaceful resolution to the war, to prevent King Zephiel's ambitions of exterminating humans and returning Elibe to the rule of dragons.",
-    charLink: "https://fireemblemwiki.org/w/images/thumb/d/d5/FEA_Roy.png/400px-FEA_Roy.png"
+    charLink: "https://fireemblemwiki.org/w/images/thumb/d/d5/FEA_Roy.png/400px-FEA_Roy.png",
+    comments: [NekuComment]
 })
 
 const fox = new Char({
@@ -57,8 +66,10 @@ const fighterz = new Game({
 
 Game.deleteMany({})
     .then(() => Char.deleteMany({}))
+    .then(() => Comment.deleteMany({}))
     .then(() => Game.create(smash, fighterz))
     .then(() => Char.create(roy, fox, gohan, bardock))
+    .then(() => Comment.create(testComment))
     .then(() => console.log(smash.title + " was added to datatbase"))
     .then(() => console.log(fighterz.title + " was added to the database"))
     .then(() => console.log(roy.name + " was added to the database"))

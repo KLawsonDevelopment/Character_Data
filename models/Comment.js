@@ -3,9 +3,8 @@ const Schema = mongoose.Schema
 
 const ComSchema = new Schema({
     user: String,
-    date: {
-        type: Date,
-        default: Date.now()
-    }
-    comment: String,
+    date: String,
+    comment: String
 })
+
+module.exports = mongoose.model('Comment', ComSchema)

@@ -10,7 +10,7 @@ const CharSchema = new Schema({
     gender: String,
     history: String,
     charLink: String,
-    comment: []
+    comments: []
 })
 
 module.exports = mongoose.model('Char', CharSchema)
