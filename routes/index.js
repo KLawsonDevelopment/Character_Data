@@ -9,10 +9,12 @@ router.post('/', gameController.create)
 router.get('/game/:gameId', gameController.show)
 router.get('/game/:gameId/edit', gameController.edit)
 router.put('/game/:gameId', gameController.update)
+router.delete('/game/:gameId', gameController.delete)
 
 router.get('/game/:gameId/new', charController.new)
 router.post('/game/:gameId/character', charController.create)
 router.get('/game/:gameId/character/:charId', charController.show)
+router.get('/game/:gameId/character/:charId/edit', charController.edit)
 
 
 module.exports = router

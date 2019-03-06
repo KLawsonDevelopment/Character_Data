@@ -29,6 +29,12 @@ const gameController = {
         Game.findByIdAndUpdate(req.params.gameId, req.body, {new:true}).then(()=>{
             res.redirect(`${req.params.gameId}`)
         })
+    },
+    delete: (req, res) => {
+        Game.findByIdAndDelete(req.params.gameId).then(() =>{
+            console.log(`Deleted game with the id of ${req.params.gameId}`)
+            res.redirect('/')
+        })
     }
 }
 
