@@ -1,15 +1,45 @@
+.charData {
+    color: orange;
+    border: 5px solid orange;
+    padding: 20px;
+}
+
+.logo {
+    height: 56px;
+    width: 56px;
+    float: right;
+}
+
+
+
+.gameFlex {
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.newGame {
+    text-decoration: none;
+    color: orange;
+}
+
+.gameInfo {
+    border: 2px solid orange;
+    width: 30vw;
+    height: auto;
+}
+
 .gameImg {
     width: 30vw;
     height: auto;
 }
+
+
 
 .charImg {
     width: 20vw;
     height: auto;
 }
 
-.name {
-    color: orange;
-    border: 5px solid orange;
-    padding: 20px;
-}
+
+
