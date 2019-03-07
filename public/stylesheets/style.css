@@ -8,7 +8,7 @@ body {
     float: right;
 }
 
-.charData {
+.top {
     color: orange;
     border: 5px solid orange;
     padding: 20px;
@@ -34,10 +34,7 @@ body {
 
 
 
-.gameImg {
-    width: 30vw;
-    height: auto;
-}
+
 
 
 
@@ -83,9 +80,26 @@ body {
 
 
 
+.charFlex {
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
 
 .charEdits {
     border: 5px solid orange;
     padding: 5px;
 }
 
+.charData {
+    border: 2px solid orange;
+    width: 30vw;
+    height: auto;
+    padding: 5px;
+}
+
+.gameImg {
+    width: 30vw;
+    height: auto;
+}
