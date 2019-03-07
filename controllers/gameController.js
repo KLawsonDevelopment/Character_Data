@@ -16,7 +16,8 @@ const gameController = {
         })
     },
     show: (req, res) => {
-        Game.findById(req.params.gameId).then(game => {
+        Game.findById(req.params.gameId).populate('characters')
+        .then(game => {
             res.render('gameView/show', { game })
         })
     },

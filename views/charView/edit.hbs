@@ -1,7 +1,7 @@
 
 <div>{{char}}</div>
 
-<form action='/game/{{game.id}}/character/{{char.id}}?_method=PUT', method="POST">
+<form action='/game/{{gameId}}/character/{{char.id}}?_method=PUT', method='POST'>
     <h2>Edit</h2>
     <div>
         <label for="name">Name</label>
@@ -12,6 +12,10 @@
         <input type="number" max=2019 name="age" id="age" value="{{char.age}}">
     </div>
     <div>
+    <div>
+        <label for="game">Game</label>
+        <input type="text" name="game" id="game" value="{{char.game}}">
+    </div>
         <label for="gender">Gender</label>
         <input type="text" name="gender" id="gender" value="{{char.gender}}">
     </div>

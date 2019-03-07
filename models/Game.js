@@ -6,7 +6,10 @@ const GameSchema = new Schema({
     year:Number,
     company: String,
     imgLink: String,
-    characters: []
+    characters: [{
+        type: Schema.Types.ObjectId,
+        ref: "Char"
+    }]
 })
 
 module.exports = mongoose.model('Game', GameSchema)

@@ -12,5 +12,8 @@
 
 {{#each game.characters}}
 <a href="/game/{{../game._id}}/character/{{_id}}"><img class="charImg" src="{{charLink}}" alt="character image"></a>
+<p>{{_id}}</p>
 <p>{{name}}</p>
+<p>{{gender}}</p>
+
 {{/each}}

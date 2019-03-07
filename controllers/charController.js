@@ -27,8 +27,22 @@ const charController = {
     edit: (req, res) => {
         Char.findById(req.params.charId)
             .then((char) => {
-                res.render('charView/edit', { char })
+                res.render('charView/edit', {
+                    char,
+                    gameId: req.params.gameId
+                })
             })
+    },
+    update: (req, res) => {
+        Char.findByIdAndUpdate(req.params.charId, req.body, {new:true}).then((char)=>{
+            res.redirect(`/game/${req.params.gameId}`)
+        })
+    },
+    delete: (req, res) => {
+        Char.findByIdAndDelete(req.params.charId).then(() =>{
+            console.log(`Deleted game with the id of ${req.params.charId}`)
+            res.redirect(`/game/${req.params.gameId}`)
+        })
     }
 }
 

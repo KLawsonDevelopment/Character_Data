@@ -15,6 +15,7 @@ router.get('/game/:gameId/new', charController.new)
 router.post('/game/:gameId/character', charController.create)
 router.get('/game/:gameId/character/:charId', charController.show)
 router.get('/game/:gameId/character/:charId/edit', charController.edit)
+router.put('/game/:gameId/character/:charId', charController.update)
 
 
 module.exports = router
