@@ -3,7 +3,7 @@ const Char = require('../models/Character.js')
 
 const charController = {
     show: (req, res) => {
-        Char.findById(req.params.charId).then(chara => {
+        Char.findById(req.params.charId).populate('comments').then(chara => {
             res.render('charView/show', {
                 chara,
                 gameId: req.params.gameId

@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const gameController = require('../controllers/gameController.js')
 const charController = require('../controllers/charController')
+const commentController = require('../controllers/commentController')
 
 router.get('/', gameController.index)
 router.get('/new', gameController.new)
@@ -17,6 +18,9 @@ router.get('/game/:gameId/character/:charId', charController.show)
 router.get('/game/:gameId/character/:charId/edit', charController.edit)
 router.put('/game/:gameId/character/:charId', charController.update)
 router.delete('/game/:gameId/character/:charId', charController.delete)
+
+router.get('/game/:gameId/character/:charId/comment/new', commentController.new)
+router.post('/game/:gameId/character/:charId/', commentController.create)
 
 
 module.exports = router
