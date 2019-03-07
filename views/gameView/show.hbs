@@ -1,15 +1,15 @@
+<h2 class="gameTitle">{{game.title}}</h2>
+<div class="charEdits">
 <a href="/game/{{game._id}}/edit">
-    <h2>Edit this game</h2>
+    <h3>Edit this game</h3>
 </a>
 <form class="delete-form" action="/game/{{game.id}}?_method=DELETE" method="POST">
-    <input class="btn" type="submit" value="DELETE">
+    <input class="btn" type="submit" value="DELETE THIS GAME">
 </form>
 <a href="/game/{{game._id}}/new">
-    <h2>Add a new character</h2>
+    <h3>Add a new character</h3>
 </a>
-
-<h1>{{game.title}}</h1>
-
+</div>
 {{#each game.characters}}
 <a href="/game/{{../game._id}}/character/{{_id}}"><img class="charImg" src="{{charLink}}" alt="character image"></a>
 <p>{{_id}}</p>

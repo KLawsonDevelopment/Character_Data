@@ -1,7 +1,5 @@
-.charData {
-    color: orange;
-    border: 5px solid orange;
-    padding: 20px;
+body {
+    background-color: seashell;
 }
 
 .logo {
@@ -10,7 +8,11 @@
     float: right;
 }
 
-
+.charData {
+    color: orange;
+    border: 5px solid orange;
+    padding: 20px;
+}
 
 .gameFlex {
     display: flex;
@@ -30,6 +32,8 @@
     padding: 5px;
 }
 
+
+
 .gameImg {
     width: 30vw;
     height: auto;
@@ -42,5 +46,46 @@
     height: auto;
 }
 
+.newGameForm {
+    border: 2px solid orange;
+}
 
+.newGameHead {
+    color: orange;
+}
+
+#title {
+    width: 150px;
+    height: 20px;
+}
+
+#year {
+    width: 89px;
+    height: 20px;
+}
+
+#company {
+    width: 118px;
+    height: 20px;
+}
+
+#imgLink {
+    width: 146px;
+    height: 20px;
+}
+
+.newSubmit {
+    background: black;
+    color: white;
+    width: 190px;
+}
+
+
+
+
+
+.charEdits {
+    border: 5px solid orange;
+    padding: 5px;
+}
 
