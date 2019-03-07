@@ -7,3 +7,9 @@
     width: 20vw;
     height: auto;
 }
+
+.name {
+    color: orange;
+    border: 5px solid orange;
+    padding: 20px;
+}
