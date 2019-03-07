@@ -17,6 +17,12 @@ const commentController = {
                 res.redirect(`/game/${req.params.gameId}/character/${req.params.charId}`)
             })
         })
+    },
+    delete: (req, res) => {
+        Comment.findByIdAndDelete(req.params.commentId).then(()=>{
+            console.log(`Deleted a comment with the Id of ${req.params.commentId}`)
+            res.redirect(`/game/${req.params.gameId}/character/${req.params.charId}`)
+        })
     }
 }
 

@@ -21,6 +21,7 @@ router.delete('/game/:gameId/character/:charId', charController.delete)
 
 router.get('/game/:gameId/character/:charId/comment/new', commentController.new)
 router.post('/game/:gameId/character/:charId/', commentController.create)
+router.delete('/game/:gameId/character/:charId/:commentId', commentController.delete)
 
 
 module.exports = router

@@ -17,7 +17,8 @@
     {{#each chara.comments}}
     <p>Username: {{user}}</p>
     <p>Comment : {{comment}}</p>
-    <form class="delete-form" action="/game/{{../gameId}}/character/{{../chara.id}}?_method=DELETE" method="POST">
+    <p>{{_id}}</p>
+    <form class="delete-form" action="/game/{{../gameId}}/character/{{../chara.id}}/{{_id}}?_method=DELETE" method="POST">
         <input class="btn" type="submit" value="DELETE THIS COMMENT">
     </form>
     {{/each}}
