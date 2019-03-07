@@ -2,6 +2,15 @@ body {
     background-color: seashell;
 }
 
+a{
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    color: navy;
+}
+
 .logo {
     height: 56px;
     width: 56px;
@@ -23,6 +32,10 @@ body {
 .newGame {
     text-decoration: none;
     color: orange;
+}
+
+.newGame:hover {
+    color: navy;
 }
 
 .gameInfo {
@@ -102,4 +115,28 @@ body {
 .gameImg {
     width: 30vw;
     height: auto;
+}
+
+
+
+.innerCharEdit {
+    border: 3px solid orange;
+    padding: 5px;
+}
+
+.innerCharData {
+    border: 2px solid orange;
+    padding: 5px;
+    margin: 5px;
+}
+
+.innerCharImg {
+    width: 20vw;
+    height: auto;
+}
+
+.commentData {
+    border: 1px solid orange;
+    padding: 5px;
+    margin: 10px;
 }
