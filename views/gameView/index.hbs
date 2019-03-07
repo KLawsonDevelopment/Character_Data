@@ -1,12 +1,14 @@
-<a class="button" href='/new'><h2 class="newGame">New Game</h2></a>
+<a class="button" href='/new'>
+    <h2 class="newGame">New Game</h2>
+</a>
 
 <div class="gameFlex">
-{{#each games}}
-<div class="gameInfo">
-<a href="/game/{{id}}"><img class="gameImg" src="{{imgLink}}" alt="gameImg"></a>
-<h3>{{title}}</h3>
-<p>Release Year: {{year}}</p>
-<p>Created by: {{company}}</p>
-</div>
-{{/each}}
+    {{#each games}}
+    <div class="gameInfo">
+        <a href="/game/{{id}}"><img class="gameImg" src="{{imgLink}}" alt="gameImg"></a>
+        <h3>{{title}}</h3>
+        <p>Release Year: {{year}}</p>
+        <p>Created by: {{company}}</p>
+    </div>
+    {{/each}}
 </div>
