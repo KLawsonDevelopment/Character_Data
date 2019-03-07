@@ -6,7 +6,6 @@ const Comment = require('../models/Comment')
 
 const NekuComment = new Comment({
     user: 'Neku',
-    date: moment().format('h:mm:ss a, MMMM Do YYYY'),
     comment: 'One of my favorite characters of all time.'
 })
 
