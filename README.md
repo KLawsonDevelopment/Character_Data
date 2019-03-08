@@ -14,4 +14,8 @@ https://trello.com/b/aNJd2Yuz/unit-2-project-character-data
 
 #Wireframe
 
-<img src="Pictures/Character_Data_Wireframe.jpg" alt="Wireframe" width="500px" height="250px">
+<img src="Pictures/Character_Data_Wireframe.jpg" alt="Wireframe" width="250px" height="500px">
+
+#Data Relations
+
+<img src="Pictures/Character_Data_Relations.jpg" alt="Data Relation" width="250px" height="500px">
