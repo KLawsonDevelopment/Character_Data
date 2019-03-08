@@ -92,6 +92,52 @@ a:hover {
 
 
 
+#name {
+    width: 200px;
+}
+
+#age {
+    width: 211px;
+}
+
+#gender {
+    width: 191px;
+}
+
+#game {
+    width: 200px;
+}
+
+#history {
+    width: 190px;
+}
+
+#charLink {
+    width: 126px;
+}
+
+.newCharSubmit {
+    background: black;
+    color: white;
+    width: 248px;
+}
+
+
+
+#user {
+    width: 150px;
+}
+
+#comment {
+    width: 152px;
+}
+
+.newCommentSubmit {
+    width: 226px;
+    background: black;
+    color: white;
+}
+
 
 .charFlex {
     display: flex;
