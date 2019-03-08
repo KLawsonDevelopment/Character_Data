@@ -19,3 +19,23 @@ https://trello.com/b/aNJd2Yuz/unit-2-project-character-data
 #Data Relations
 
 <img src="Pictures/Character_Data_Relations.jpg" alt="Data Relation" width="250px" height="500px">
+
+#Tech/Libraries/Frameworks
+
+JS Library : Moment.js
+
+Flex-box
+
+Game Logos and Character Portraits provided by Google and official art rips
+
+#version 2 revision
+
+Add in animations, add in 'game sounds', User/Admin log in to prevent deletion of games if needed, editting comments based on users, cleaner mobile version.
+
+#shoutouts
+
+Dezrin - Debugging
+
+Cam/Taylor - General help due to lack of knowledge of the material.
+
+Chad - Encouragement and advice in the right direction.
