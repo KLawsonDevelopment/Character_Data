@@ -4,8 +4,7 @@ require('dotenv').config();
 // require mongoose
 const mongoose = require('mongoose');
 
-// connect to a local database called welp
-// Connect to a local database called welp
+
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 } else {
